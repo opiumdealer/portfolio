@@ -1,1 +1,101 @@
-# portfolio
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Art Portfolio</title>
+  <!-- ✅ Google Font: Onest -->
+  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Onest', sans-serif;
+      background-color: #111;
+      color: white;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #222;
+      position: sticky;
+      top: 0;
+    }
+
+    .header-center {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .header-img {
+      height: 40px;
+      cursor: pointer;
+    }
+
+    main {
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    .art-item {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .art-item img {
+      max-width: 300px;
+      height: auto;
+      border-radius: 8px;
+      border: 2px solid #444;
+    }
+
+    .art-description {
+      max-width: 500px;
+      font-family: 'Onest', sans-serif;
+    }
+  </style>
+</head>
+<body>
+  
+  <header>
+    <div></div>
+    <!-- Centered Portfolio Image -->
+    <div class="header-center">
+      <img src="https://i.imgur.com/NV876xm.png" alt="Portfolio" class="header-img">
+    </div>
+    <!-- Instagram Image on the Right -->
+    <a href="https://www.instagram.com/opmdealer/" target="_blank">
+      <img src="https://i.imgur.com/chuuCDl.png" alt="Instagram" class="header-img">
+    </a>
+  </header>
+
+  <main>
+    <div class="art-item">
+      <img src="https://i.imgur.com/SkxJP2e.png" alt="Art 1">
+      <div class="art-description">
+        <h2>blondie</h2>
+        <p>blondie poster, resolution 4000x5159/p>
+      </div>
+    </div>
+
+    <div class="art-item">
+      <img src="https://i.imgur.com/IEE1ja5.jpeg" alt="Art 2">
+      <div class="art-description">
+        <h2>bone matrix</h2>
+        <p>17 layers of bone matrix and one layer of a dead tree, resolution 3000x3000</p>
+      </div>
+    </div>
+
+    <!-- Add more art items here -->
+  </main>
+
+</body>
+</html>
+
